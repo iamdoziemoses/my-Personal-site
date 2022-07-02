@@ -1,0 +1,287 @@
+/* 06283D
+1363DF
+47B5FF
+DFF6FF */
+
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, 
+body{
+    font-size: 62.5%;
+    line-height: 1.7;
+    font-family: "inter", sans-serif;
+    text-align: center;
+    font-weight: 400;
+}
+
+h1{
+    font-family: 'Sacramento', cursive;
+    font-size: 9rem;
+    color: #06283D;
+}
+
+h2, h3{
+    font-family: "Montserrat", sans-serif;
+    color: #47B5FF;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+p{
+    font-size: 1.8rem;
+    font-family: "Montserrat", sans-serif;
+    color: #a7abac;
+    font-weight: 400;
+}
+
+a{
+    color: #47B5FF;
+}
+
+@media screen and (max-width: 600px){
+    h1{
+        font-size: 7rem;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    h3{
+        font-size: 1.8rem;
+    }
+
+    p{
+        font-size: 1.5rem;
+    }
+}
+
+.section-home{
+    background-color: #06283D;
+    text-align: center;
+    position: relative;
+    padding-top: 10rem;
+}
+
+.section-home__title-main, 
+.section-home__title-sub{
+    color: #DFF6FF;
+}
+
+.section-home__title-main{
+    margin-top: 5rem;
+    animation: moveDown 1s ease-in-out;
+    animation-iteration-count: 2;
+}
+
+.section-home__title-sub{
+    font-size: 2.5rem;
+    animation: moveRight 1s ease-in-out;
+}
+
+.top-cloud{
+    position: absolute;
+    right: 30rem;
+    top: 5rem;
+}
+
+.bottom-cloud{
+    position: absolute;
+    left: 30rem;
+}
+
+@keyframes moveDown{
+    /* 0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    } */
+
+    50%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveRight{
+    /* 0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    } */
+
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section-home__title-sub{
+        font-size: 2rem;
+    }
+
+    .bottom-cloud{
+        display: none;
+    }
+
+    .mountain-img{
+       max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .bottom-cloud{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .bottom-cloud{
+        display: block;
+    }
+}
+
+.profile{
+    width: 50%;
+    margin: 5rem auto 5rem auto;
+}
+
+.profile img{
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.profile h2{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-style: italic;
+}
+
+@media screen and (max-width: 600px){
+    .profile{
+       width: 90%;
+    }
+
+    .profile h2{
+        font-size: 2.5rem;
+    }
+}
+
+.skills{
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.skills h2{
+    font-size: 3rem;
+}
+
+.skill-row{
+    width: 50%;
+    margin: 50px auto;
+    text-align: left;
+}
+
+.skill-row__image-1,
+.skill-row__image-2{
+    width: 25%;
+}
+
+.skill-row__image-1{
+    float: left;
+    margin-right: 3rem;
+}
+
+.skill-row__image-2{
+    float: right;
+    margin-right: 3rem;
+}
+
+.skill-row p{
+    font-weight: normal;
+}
+
+@media screen and (max-width: 600px) {
+    .skill-row{
+        width: 90%;
+        text-align: center;
+    }
+
+    .skill-row__image-1, 
+    .skill-row__image-2{
+        float: none;
+        margin: 0 auto;
+    }
+}
+
+.contact-me{
+    margin: 50px auto 50px auto;
+}
+
+.contact-me h2, h3, p{
+    margin-bottom: 15px;
+}
+
+.btn{
+    background-color: #06283D;
+    color: #DFF6FF;
+    padding: 1.4rem 1.6rem;
+    font-size: 2rem;
+    text-decoration: none;
+    position: relative;
+    top: 20px;
+    border-radius: 8px;
+    transition: all .5s;
+}
+
+.btn:hover{
+   background-color: #DFF6FF;
+   color: #06283D; 
+}
+
+@media screen and (max-width: 600px){
+    .btn{
+        font-size: 1.5rem;
+    }
+}
+
+.bottom-container{
+    background-color: #06283D;
+    color: #DFF6FF;
+    padding: 20px;
+}
+
+.footer-link{
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.footer-link:hover{
+    color: #DFF6FF;
+}
+
+.bottom-container p{
+    margin-top: 15px;
+}
